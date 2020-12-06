@@ -9,7 +9,7 @@ export const todos = (state = [], action) => {
         text,
         isCompleted: false,
       };
-      return state.concate(newTodo);
+      return state.concat(newTodo);
     }
     case REMOVE_TODO: {
       const { text } = payload;
