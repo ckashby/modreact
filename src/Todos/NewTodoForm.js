@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./NewTodoForm.css";
 import { connect } from "react-redux";
 import { createTodo } from "./actions";
@@ -22,6 +22,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
           if (!isDuplicateText) {
             onCreatePressed(inputText);
             setInputText("");
+            console.log("new test");
           }
         }}
       >
